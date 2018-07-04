@@ -1,10 +1,42 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Usuário Master</title>
+		<title>Master User</title>
 		<meta charset="utf-8">
+		<hgroup>
+			<h1> Gestão de Projetos IEEE - UFABC </h1>
+		</hgroup>
+		<img src="/figuras/teste1.JPG" />
+		<img src="/teste.jpg" />
 	</head>
 	<body>
+
+		<input type="button" name="btnNovoProj" id="idNovoProj" value="Adicionar Projeto">
+		<img src="/figuras/RAS_logo.png">
+		<form>
+			<fieldset id="masterUser"><legend>Projetos</legend>
+				<p> Projeto 1 </p>
+
+				<p> Projeto 2 </p>
+
+				<p> Projeto 3 </p>
+
+				<input type="button" name="btnVerTodos" id="idVerTodos" value="Ver Todos">
+			</fieldset>
+		</form>
+
+		<!--	POPUP CRIAR NOVO PROJETO -->
+		<h2> Criar Projeto </h2>
+
+		<p> Nome do Projeto: <input type="text" name="cxNomeProjeto" id="idProjeto" size="25" maxlength="25" > </p>
+
+		Gestor: <input type="text" name="cxGestor" id="idGestor" size="25" maxlength="25" > </p>
+
+		Senha: <input type="password" name="cxSenha" id="iSenha" size="25" maxlength="25" > </p>
+
+		Confirmar Senha: <input type="password" name="cxConfirma" id="idConfirma" size="25" maxlength="25" > </p>
+
+		<input type="button" name="btnCriar" id="idCriar" value="Criar">
 
 	</body>
 </html>
