@@ -3,15 +3,44 @@
 	<head>
 		<title>Master User</title>
 		<meta charset="utf-8">
+		
+
+		<!-- <script type="text/javascript">
+			<link rel="stylesheet" type="text/css" href="/css/estilosPaginas.css">
+			
+			function abrir(){
+				document.getElementById('idNovoProj').stytle.display = ' block'
+
+				 			}
+
+		</script>
+		-->
+
+		<style type="text/css">
+			.CXpopup{
+				position: fixed;
+				top: 0; bottom: 0;
+				left: 0; right: 0;
+				margin: auto;
+				width: 400px;
+				height: 300px;
+				padding: 15px;
+				border: solid 3px #6e7985;
+				background: #9da6af;
+				display: none;
+			}			
+		</style>
+
 		<hgroup>
 			<h1> Gestão de Projetos IEEE - UFABC </h1>
 		</hgroup>
 		<img src="/figuras/teste1.JPG" />
 		<img src="/teste.jpg" />
 	</head>
+
 	<body>
 
-		<input type="button" name="btnNovoProj" id="idNovoProj" value="Adicionar Projeto">
+		<input type="button" name="btnNovoProj" id="idNovoProj" href="javascript: abrir();" value="Adicionar Projeto">
 		<img src="/figuras/RAS_logo.png">
 		<form>
 			<fieldset id="masterUser"><legend>Projetos</legend>
@@ -23,20 +52,27 @@
 
 				<input type="button" name="btnVerTodos" id="idVerTodos" value="Ver Todos">
 			</fieldset>
-		</form>
 
-		<!--	POPUP CRIAR NOVO PROJETO -->
-		<h2> Criar Projeto </h2>
+		</form >
 
-		<p> Nome do Projeto: <input type="text" name="cxNomeProjeto" id="idProjeto" size="25" maxlength="25" > </p>
+			<!--	POPUP CRIAR NOVO PROJETO -->
+			<div id="CXpopup">
 
-		Gestor: <input type="text" name="cxGestor" id="idGestor" size="25" maxlength="25" > </p>
+				<h2> Criar Projeto </h2>
 
-		Senha: <input type="password" name="cxSenha" id="iSenha" size="25" maxlength="25" > </p>
+				<p> Nome do Projeto: <input type="text" name="cxNomeProjeto" id="idProjeto" size="25" maxlength="25" > </p>
 
-		Confirmar Senha: <input type="password" name="cxConfirma" id="idConfirma" size="25" maxlength="25" > </p>
+				Gestor: <input type="text" name="cxGestor" id="idGestor" size="25" maxlength="25" > </p>
 
-		<input type="button" name="btnCriar" id="idCriar" value="Criar">
+				Senha: <input type="password" name="cxSenha" id="iSenha" size="25" maxlength="25" > </p>
+
+				Confirmar Senha: <input type="password" name="cxConfirma" id="idConfirma" size="25" maxlength="25" > </p>
+
+				<input type="button" name="btnCriar" id="idCriar" value="Criar">				
+
+			</div>
+			
+
 
 	</body>
 </html>

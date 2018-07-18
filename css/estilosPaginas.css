@@ -1,1 +1,17 @@
-/*arquivos CSS */
+/* Estilos  CSS */
+
+#CXpopup{
+	position: fixed;
+	top: 0; bottom: 0;
+	left: 0; right: 0;
+	margin: auto;
+	width: 400px;
+	height: 300px;
+	padding: 15px;
+	border: solid 3px #6e7985;
+	background: #9da6af;
+	display: block;
+
+}
+
+006699
