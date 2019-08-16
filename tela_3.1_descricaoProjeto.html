@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Detalhes do Projeto</title>
+		<meta charset="utf-8">
+		<hgroup>
+			<h1> Gestão de Projetos IEEE - UFABC </h1>
+		</hgroup>
+		<img src="/figuras/IEEE_logo_branco.PNG" />
+		<img src="/figuras/UFABC_logo.PNG" />
+	</head>
+	<body>
+		<form>
+			<fieldset>
+				
+				<input type="button" name="btnlog" id="idLog" value="Adicionar Membro">
+
+				<p><label> Nome do Projeto: <input type="text" name="cxProjeto" id="idProjeto" size="31" maxlength="30"> </label> </p>
+				<p><label> Nome do Gestor: <input type="text" name="cxGestor" id="idGestor" size="21" maxlength="20"> </label></p>  
+				Data de Início:					 Previsão de Término:
+				<p><label> Orçamento: R$<input type="text" name="cxOrcamento" id="idOrcamento" placeholder="Somente Números"> </label></p>
+				<p><label> Descrição do Projeto: <input type="text" name="cxDescricao" id="idDescricao"> </label></p>
+				<p><label> Objetivo do Projeto: <input type="text" name="cxObjetivo" id="idObjetivo"> </label></p>
+
+				<input type="button" name="btnlog" id="idLog" value="Registrar Atividade">	
+					 
+				<!--  POP UP CADASTRAR MEMBROS -->
+				<h2> Membros do Projeto</h2>
+				<p> TABELA </p>
+				<input type="button" name="btnMembro" id="idMembro" value="+">
+				<input type="button" name="btnSalvar" id="idSalvar" value="Salvar"> 
+
+				<!-- POP UP LOG DE ATIVIDADES -->
+				<h2> Registrar Atividade </h2>
+				Data:
+				<input type="button" name="btnlog" id="idLog" value="Salvar Atividade"> 
+
+			</fieldset>
+		</form>
+
+	</body>
+</html>
